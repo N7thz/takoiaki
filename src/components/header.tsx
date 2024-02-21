@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export const Header = () => {
+export function Header() {
 
     const options: string[] = [
         "home", "populares", "categorias", "carrinho"
