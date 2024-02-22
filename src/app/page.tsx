@@ -1,30 +1,86 @@
-import { AllProducts } from "@/components/all-products";
-import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
+import { ButtonsLogin } from "@/components/button-login"
+import { Button } from "@/components/ui/button"
+import {
+  Card, CardContent, CardFooter, CardHeader, CardTitle
+} from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 
 export default function Home() {
 
   return (
 
     <div
-      className="min-h-screen bg-zinc-100 dark:bg-zinc-900"
+      className="min-h-screen flex justify-center items-center backgroundImage"
     >
-      <div
-        className="pt-24 drop-shadow-2xl flex flex-col items-center"
+      <Card
+        className="bg-zinc-100/95 border border-indigo-400 text-black p-2 w-[400px]"
       >
-        <div className="w-1/2 p-2 relative">
-          <Input
-            className="p-1 bg-transparent border-2 border-indigo-400 focus:border-none focus:bg-zinc-50"
-            placeholder="o que está procurando?"
-          />
-          <Search
-            className="absolute top-4 right-4 text-zinc-400"
-            size={24}
-          />
-        </div>
+        <CardHeader>
+          <CardTitle
+            className="text-3xl italic"
+          >
+            Login
+          </CardTitle>
+        </CardHeader>
+        <CardContent
+          className="flex flex-col gap-4"
+        >
 
-        <AllProducts />
-      </div>
+          <div
+            className="flex flex-col gap-1"
+          >
+            <Label
+              className="text-lg p-1"
+              htmlFor="email"
+            >
+              email:
+            </Label>
+            <Input
+              className="bg-zinc-100 border-indigo-400"
+              id="email"
+            />
+          </div>
+
+          <div
+            className="flex flex-col gap-1"
+          >
+            <Label
+              className="text-lg p-1"
+              htmlFor="password"
+            >
+              passoword:
+            </Label>
+            <Input
+              className="bg-zinc-100 border-indigo-400"
+              id="password"
+            />
+          </div>
+
+          <div
+            className="flex justify-center items-center gap-2 px-4"
+          >
+            <Separator
+              className="w-1/2"
+            />
+            or
+            <Separator
+              className="w-1/2"
+            />
+          </div>
+          <ButtonsLogin />
+
+        </CardContent>
+
+        <CardFooter
+          className="flex justify-end"
+        >
+          <Button className="bg-indigo-400">
+            Login
+          </Button>
+        </CardFooter>
+      </Card>
     </div>
-  );
+  )
 }

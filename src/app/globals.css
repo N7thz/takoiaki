@@ -65,6 +65,14 @@
   }
 }
 
+@layer components {
+
+  .backgroundImage {
+    background: url("https://i.pinimg.com/564x/dd/58/c4/dd58c474d90b65b72d3bbbf05021ce28.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
