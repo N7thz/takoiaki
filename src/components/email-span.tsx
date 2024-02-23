@@ -7,8 +7,8 @@
 //     const handleEmail = async () => {
 
 //         axios.post("/api/send")
-//             .then(res => console.log(res))
-//             .catch(err => console.log(err))
+//             .then(res => res))
+//             .catch(err => err))
 //     }
 
 //     return (

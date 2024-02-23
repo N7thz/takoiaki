@@ -10,7 +10,7 @@ export const Header = () => {
     return (
 
         <div
-            className="w-full flex justify-between items-center pb-12 bg-zinc-100"
+            className="w-full flex justify-between items-center pb-12 bg-zinc-100 dark:bg-zinc-900 absolute top-0 left-0 z-10"
         >
             <div
                 className="w-2/3 bg-gradient-to-r from-indigo-400 to-cyan-400 p-[0_4px_4px_0] rounded-br-2xl"

@@ -1,6 +1,6 @@
 "use client"
 
-import { useSession } from "next-auth/react"
+import { useSession, signOut } from "next-auth/react"
 import { MyAvatar } from "./my-avatar"
 import {
     Sheet,
@@ -9,7 +9,12 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
+import {
+    Card, CardFooter, CardHeader, CardTitle
+} from "./ui/card"
 import { ModeToggle } from "./mode-toggle"
+import { Button } from "./ui/button"
+import { ShoppingCart } from "./shopping-cart"
 
 export const MenuHeader = () => {
 
@@ -40,7 +45,32 @@ export const MenuHeader = () => {
                         Olá, {name}
                     </SheetTitle>
                 </SheetHeader>
-                <ModeToggle />
+                <div
+                    className="flex flex-col gap-4 p-2 items-center"
+                >
+                    <ModeToggle />
+                    <Button
+                        onClick={() => signOut()}
+                        className="bg-indigo-400"
+                    >
+                        Sair
+                    </Button>
+                </div>
+                <Card
+                    className="boredr border-indigo-400"
+                >
+                    <CardHeader>
+                        <CardTitle>
+                            Meu Carrinho
+                        </CardTitle>
+                    </CardHeader>
+
+                    <ShoppingCart />
+                    
+                    <CardFooter>
+                        Finalizar pedido
+                    </CardFooter>
+                </Card>
             </SheetContent>
         </Sheet>
     )

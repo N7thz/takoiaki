@@ -1,3 +1,5 @@
+"use client"
+
 import { ProductResponse } from "@/types"
 import { useQuery } from "@tanstack/react-query"
 import { Button } from "./ui/button"
@@ -18,8 +20,6 @@ export const Pagination = () => {
             return data
         }
     })
-
-    console.log(productResponse)
 
     if (!productResponse) {
 
@@ -44,8 +44,6 @@ export const Pagination = () => {
 
         const value = (Number(prevPage) - 1).toString()
 
-        console.log(value)
-
         localStorage.setItem("page", value)
 
         window.location.reload()
@@ -61,8 +59,6 @@ export const Pagination = () => {
         }
 
         const value = (Number(prevPage) + 1).toString()
-
-        console.log(value)
 
         localStorage.setItem("page", value)
 
