@@ -1,20 +1,50 @@
 {
   "shopping-cart": [
     {
-      "id": "2aa1",
-      "idProduct": "1",
-      "title": "camiseta de Algodão",
-      "category": "roupas",
+      "id": "cbaa",
+      "idProduct": "3",
+      "title": "tênis esportivo",
+      "category": "calçados",
       "quantity": 3,
+      "price": 59.99,
+      "totalValue": 179.97,
+      "imageURL": "https://energyexpress.com.br/cdn/shop/products/tenis-esportivo-casual-masculino-feminino-simple-way-moda-055-540.jpg?v=1632403896"
+    },
+    {
+      "id": "0c5c",
+      "idProduct": "4",
+      "title": "mochila casual",
+      "category": "acessórios",
+      "quantity": 1,
+      "price": 29.99,
+      "totalValue": 29.99,
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtGHhjjslfUapnstVQFrE4_z1c2wXc1tcOg&usqp=CAU"
+    },
+    {
+      "id": "8b33",
+      "idProduct": "7",
+      "title": "boné snapback",
+      "category": "acessórios",
+      "quantity": 3,
+      "price": 14.99,
+      "totalValue": 44.97,
+      "imageURL": "https://krabclothing.com/wp-content/uploads/2023/06/bone-snap-scaled-1.jpg"
+    },
+    {
+      "id": "0fc0",
+      "idProduct": "8",
+      "title": "chinelo slide",
+      "category": "calçados",
+      "quantity": 2,
       "price": 19.99,
-      "totalValue": 59.97,
-      "imageURL": "https://down-br.img.susercontent.com/file/sg-11134201-22100-k14wsbb6m4iv6a"
+      "totalValue": 39.98,
+      "imageURL": "https://dcdn.mitiendanube.com/stores/002/490/724/products/chinelo-slider-branco-catchoros-21-68e213aeb89440309516745070643596-1024-1024.jpg"
     }
   ],
   "history": [],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "camiseta de Algodão",
       "description": "camiseta básica de algodão confortável",
       "category": "roupas",
@@ -24,7 +54,7 @@
       "isLiked": false
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "calça jeans skinny",
       "description": "calça jeans skinny moderna e estilosa",
       "category": "roupas",
@@ -34,7 +64,7 @@
       "isLiked": false
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "tênis esportivo",
       "description": "tênis esportivo leve e confortável",
       "category": "calçados",
@@ -44,7 +74,7 @@
       "isLiked": true
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "mochila casual",
       "description": "mochila casual para uso diário",
       "category": "acessórios",
@@ -54,7 +84,7 @@
       "isLiked": false
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "relógio analógico",
       "description": "relógio analógico elegante com pulseira de couro",
       "category": "acessórios",
@@ -64,7 +94,7 @@
       "isLiked": true
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "vestido floral",
       "description": "vestido floral leve e confortável para o verão",
       "category": "roupas",
@@ -74,7 +104,7 @@
       "isLiked": false
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "boné snapback",
       "description": "boné snapback ajustável para estilo casual",
       "category": "acessórios",
@@ -84,7 +114,7 @@
       "isLiked": true
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "chinelo slide",
       "description": "chinelo slide confortável e durável",
       "category": "calçados",
@@ -94,7 +124,7 @@
       "isLiked": false
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "bolsa tote",
       "description": "bolsa tote espaçosa e versátil",
       "category": "acessórios",
@@ -104,7 +134,7 @@
       "isLiked": true
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "camisa polo",
       "description": "camisa polo clássica e elegante",
       "category": "roupas",
@@ -114,7 +144,7 @@
       "isLiked": false
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Smart TV LED 50",
       "description": "Camiseta básica de algodão confortável",
       "category": "eletrônico",
@@ -124,7 +154,7 @@
       "isLiked": false
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "apple iphone 15 pro max",
       "description": "calça jeans skinny moderna e estilosa",
       "category": "eletrônico",
@@ -134,7 +164,7 @@
       "isLiked": false
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "playStation 5 slim",
       "description": "tênis esportivo leve e confortável",
       "category": "eletrônico",
@@ -144,7 +174,7 @@
       "isLiked": true
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "apple notebook macbook air",
       "description": "mochila casual para uso diário",
       "category": "acessórios",
@@ -154,7 +184,7 @@
       "isLiked": false
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "teclado mecânico preto rgb",
       "description": "relógio analógico elegante com pulseira de couro",
       "category": "acessórios",
@@ -164,7 +194,7 @@
       "isLiked": true
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "camiseta de Algodão",
       "description": "camiseta básica de algodão confortável",
       "category": "roupas",
@@ -174,7 +204,7 @@
       "isLiked": false
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "calça jeans skinny",
       "description": "calça jeans skinny moderna e estilosa",
       "category": "roupas",
@@ -184,7 +214,7 @@
       "isLiked": false
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "tênis esportivo",
       "description": "tênis esportivo leve e confortável",
       "category": "calçados",
@@ -194,7 +224,7 @@
       "isLiked": true
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "mochila casual",
       "description": "mochila casual para uso diário",
       "category": "acessórios",
@@ -204,7 +234,7 @@
       "isLiked": false
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "relógio analógico",
       "description": "relógio analógico elegante com pulseira de couro",
       "category": "acessórios",
@@ -214,7 +244,7 @@
       "isLiked": true
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "vestido floral",
       "description": "vestido floral leve e confortável para o verão",
       "category": "roupas",
@@ -224,7 +254,7 @@
       "isLiked": false
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "boné snapback",
       "description": "boné snapback ajustável para estilo casual",
       "category": "acessórios",
@@ -234,7 +264,7 @@
       "isLiked": true
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "chinelo slide",
       "description": "chinelo slide confortável e durável",
       "category": "calçados",
@@ -244,7 +274,7 @@
       "isLiked": false
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "bolsa tote",
       "description": "bolsa tote espaçosa e versátil",
       "category": "acessórios",
@@ -254,7 +284,7 @@
       "isLiked": true
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "camisa polo",
       "description": "camisa polo clássica e elegante",
       "category": "roupas",
@@ -264,7 +294,7 @@
       "isLiked": false
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Smart TV LED 50",
       "description": "Camiseta básica de algodão confortável",
       "category": "eletrônico",
@@ -274,7 +304,7 @@
       "isLiked": false
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "apple iphone 15 pro max",
       "description": "calça jeans skinny moderna e estilosa",
       "category": "eletrônico",
@@ -284,7 +314,7 @@
       "isLiked": false
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "playStation 5 slim",
       "description": "tênis esportivo leve e confortável",
       "category": "eletrônico",
@@ -294,7 +324,7 @@
       "isLiked": true
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "apple notebook macbook air",
       "description": "mochila casual para uso diário",
       "category": "acessórios",
@@ -304,7 +334,7 @@
       "isLiked": false
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "teclado mecânico preto rgb",
       "description": "relógio analógico elegante com pulseira de couro",
       "category": "acessórios",

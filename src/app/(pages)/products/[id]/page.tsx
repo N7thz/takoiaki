@@ -10,10 +10,16 @@ import { useQuery } from "@tanstack/react-query"
 import { Product } from "@/types"
 import { FormItem } from "@/components/form-item"
 import { AlertModal } from "@/components/alert-modal"
+import { useSession } from "next-auth/react"
 
 export default function Product({ params }: { params: { id: string } }) {
 
     const id = params.id
+    
+    useSession({
+
+        required: true
+    })
 
     const [isCreated, setIsCreated] = useState<boolean>(false)
 

@@ -1,6 +1,7 @@
 "use client"
 
 import { useSession, signOut } from "next-auth/react"
+import Link from "next/link"
 import { MyAvatar } from "./my-avatar"
 import {
     Sheet,
@@ -8,7 +9,7 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-} from "@/components/ui/sheet"
+} from "./ui/sheet"
 import {
     Card, CardFooter, CardHeader, CardTitle
 } from "./ui/card"
@@ -66,9 +67,20 @@ export const MenuHeader = () => {
                     </CardHeader>
 
                     <ShoppingCart />
-                    
-                    <CardFooter>
-                        Finalizar pedido
+
+                    <CardFooter
+                        className="flex items-center justify-end drop-shadow-2xl pt-8"
+                    >
+                        <Link
+                            href={"/order"}
+                        >
+                            <Button
+                                variant={"outline"}
+                                className="border-2 border-indigo-400"
+                            >
+                                Finalizar compra
+                            </Button>
+                        </Link>
                     </CardFooter>
                 </Card>
             </SheetContent>
