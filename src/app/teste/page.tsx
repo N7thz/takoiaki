@@ -1,28 +1,35 @@
-/* eslint-disable @next/next/no-img-element */
-import { FC } from "react"
-import {
-    Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle
+"use client"
+
+import { 
+    Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle 
 } from "@/components/ui/card"
 import { History } from "@/types"
 import { useQuery } from "@tanstack/react-query"
+import { useSession } from "next-auth/react"
 import { format } from "date-fns"
 
-interface EmailTemplateProps {
+export default function Teste() {
 
-    firstName: string
-}
+    const { data: session } = useSession()
 
-export const EmailTemplate: FC<EmailTemplateProps> = async ({ firstName }) => {
+    const { data: lastOrder } = useQuery({
+        queryKey: ["get-history"],
+        queryFn: async () => {
 
-    const response = await fetch("http://localhost:3333/history")
+            const response = await
+                fetch(`http://localhost:3333/history`)
 
-    const lastOrder: History[] = await response.json()
+            const data: History[] = await response.json()
 
-    const lastIndex = lastOrder.length - 1
+            const lastIndex = data.length - 1
 
-    console.log(lastOrder[lastIndex])
+            console.log(data[lastIndex])
 
-    if (!lastOrder) return
+            return data[lastIndex]
+        }
+    })
+
+    if (!session?.user?.name || !lastOrder) return
 
     const {
         id,
@@ -30,7 +37,7 @@ export const EmailTemplate: FC<EmailTemplateProps> = async ({ firstName }) => {
         created_at,
         totalValue,
         cep: { bairro, localidade, uf }
-    } = lastOrder[lastIndex]
+    } = lastOrder
 
     return (
 
@@ -38,18 +45,18 @@ export const EmailTemplate: FC<EmailTemplateProps> = async ({ firstName }) => {
             className="min-h-screen flex items-center justify-center"
         >
             <Card
-                className="border border-indigo-400 bg-indigo-400 m-3"
+                className="border border-indigo-400 m-3"
             >
                 <CardHeader>
                     <CardTitle>
-                        Olá, {firstName}
+                        Olá , {session.user.name}
                     </CardTitle>
                     <CardDescription>
                         Seu pedido de numero {id} foi efetuado com sucesso.
                     </CardDescription>
                 </CardHeader>
                 <CardContent
-                    className="flex flex-col gap-3 bg-zinc-50"
+                    className="flex flex-col gap-3"
                 >
                     {
                         items_order.map(item => {
@@ -96,30 +103,37 @@ export const EmailTemplate: FC<EmailTemplateProps> = async ({ firstName }) => {
                 <CardFooter
                     className="flex flex-col gap-2 items-start"
                 >
-                    <span>
-                        <h4
+
+                    <h4
+                        className="text-lg"
+                    >
+                        <span
                             className="font-bold italic capitalize"
                         >
                             data da compra:
-                        </h4>
+                        </span>
                         {format(created_at, "dd/MM/yyyy")}
-                    </span>
-                    <span>
-                        <h4
+                    </h4>
+                    <h4
+                        className="text-lg"
+                    >
+                        <span
                             className="font-bold italic capitalize"
                         >
                             Valor da compra:
-                        </h4>
+                        </span>
                         R$ {totalValue}
-                    </span>
-                    <span>
-                        <h4
+                    </h4>
+                    <h4
+                        className="text-lg"
+                    >
+                        <span
                             className="font-bold italic capitalize"
                         >
                             Endereço:
-                        </h4>
+                        </span>
                         {localidade},{bairro}-{uf}
-                    </span>
+                    </h4>
                 </CardFooter>
             </Card>
         </div>

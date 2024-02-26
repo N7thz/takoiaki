@@ -1,47 +1,259 @@
 {
   "shopping-cart": [
     {
-      "id": "cbaa",
-      "idProduct": "3",
-      "title": "tênis esportivo",
-      "category": "calçados",
-      "quantity": 3,
-      "price": 59.99,
-      "totalValue": 179.97,
-      "imageURL": "https://energyexpress.com.br/cdn/shop/products/tenis-esportivo-casual-masculino-feminino-simple-way-moda-055-540.jpg?v=1632403896"
-    },
-    {
-      "id": "0c5c",
-      "idProduct": "4",
-      "title": "mochila casual",
-      "category": "acessórios",
+      "id": "74c1",
+      "idProduct": "2",
+      "title": "calça jeans skinny",
+      "category": "roupas",
       "quantity": 1,
-      "price": 29.99,
-      "totalValue": 29.99,
-      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtGHhjjslfUapnstVQFrE4_z1c2wXc1tcOg&usqp=CAU"
+      "price": 39.99,
+      "totalValue": 39.99,
+      "imageURL": "https://www.lezalez.com/dw/image/v2/BFCG_PRD/on/demandware.static/-/Sites-masterCatalog_Lunelli/default/dwe594e72d/large/lezalez-1.7133L-003317-C3.jpg?sw=900&sfrm=jpg&sm=fit&q=80"
     },
     {
-      "id": "8b33",
-      "idProduct": "7",
-      "title": "boné snapback",
-      "category": "acessórios",
-      "quantity": 3,
-      "price": 14.99,
-      "totalValue": 44.97,
-      "imageURL": "https://krabclothing.com/wp-content/uploads/2023/06/bone-snap-scaled-1.jpg"
-    },
-    {
-      "id": "0fc0",
+      "id": "da97",
       "idProduct": "8",
       "title": "chinelo slide",
       "category": "calçados",
-      "quantity": 2,
+      "quantity": 1,
       "price": 19.99,
-      "totalValue": 39.98,
+      "totalValue": 19.99,
       "imageURL": "https://dcdn.mitiendanube.com/stores/002/490/724/products/chinelo-slider-branco-catchoros-21-68e213aeb89440309516745070643596-1024-1024.jpg"
     }
   ],
-  "history": [],
+  "history": [
+    {
+      "id": "c95b",
+      "items_order": [
+        {
+          "id": "dc55",
+          "idProduct": "2",
+          "title": "calça jeans skinny",
+          "category": "roupas",
+          "quantity": 1,
+          "price": 39.99,
+          "totalValue": 39.99,
+          "imageURL": "https://www.lezalez.com/dw/image/v2/BFCG_PRD/on/demandware.static/-/Sites-masterCatalog_Lunelli/default/dwe594e72d/large/lezalez-1.7133L-003317-C3.jpg?sw=900&sfrm=jpg&sm=fit&q=80"
+        },
+        {
+          "id": "f493",
+          "idProduct": "8",
+          "title": "chinelo slide",
+          "category": "calçados",
+          "quantity": 2,
+          "price": 19.99,
+          "totalValue": 39.98,
+          "imageURL": "https://dcdn.mitiendanube.com/stores/002/490/724/products/chinelo-slider-branco-catchoros-21-68e213aeb89440309516745070643596-1024-1024.jpg"
+        }
+      ],
+      "totalValue": 79.97,
+      "cep": {
+        "cep": "25956-035",
+        "logradouro": "Rua Otávio Strucchi",
+        "complemento": "",
+        "bairro": "São Pedro",
+        "localidade": "Teresópolis",
+        "uf": "RJ",
+        "ibge": "3305802",
+        "gia": "",
+        "ddd": "21",
+        "siafi": "5915"
+      },
+      "created_at": "Mon Feb 26 2024 15:52:05 GMT-0300 (Horário Padrão de Brasília)"
+    },
+    {
+      "id": "7f02",
+      "items_order": [
+        {
+          "id": "4950",
+          "idProduct": "6",
+          "title": "vestido floral",
+          "category": "roupas",
+          "quantity": 1,
+          "price": 34.99,
+          "totalValue": 34.99,
+          "imageURL": "https://www.lojastyleme.com.br/cdn/shop/products/VESTIDOpretofloralcostasnuascomcinturaderenda_650x.jpg?v=1640009014"
+        }
+      ],
+      "totalValue": 34.99,
+      "cep": {
+        "cep": "25956-035",
+        "logradouro": "Rua Otávio Strucchi",
+        "complemento": "",
+        "bairro": "São Pedro",
+        "localidade": "Teresópolis",
+        "uf": "RJ",
+        "ibge": "3305802",
+        "gia": "",
+        "ddd": "21",
+        "siafi": "5915"
+      },
+      "created_at": "Mon Feb 26 2024 15:55:36 GMT-0300 (Horário Padrão de Brasília)"
+    },
+    {
+      "id": "3660",
+      "items_order": [
+        {
+          "id": "4950",
+          "idProduct": "6",
+          "title": "vestido floral",
+          "category": "roupas",
+          "quantity": 1,
+          "price": 34.99,
+          "totalValue": 34.99,
+          "imageURL": "https://www.lojastyleme.com.br/cdn/shop/products/VESTIDOpretofloralcostasnuascomcinturaderenda_650x.jpg?v=1640009014"
+        },
+        {
+          "id": "b9ca",
+          "idProduct": "3",
+          "title": "tênis esportivo",
+          "category": "calçados",
+          "quantity": 2,
+          "price": 59.99,
+          "totalValue": 119.98,
+          "imageURL": "https://energyexpress.com.br/cdn/shop/products/tenis-esportivo-casual-masculino-feminino-simple-way-moda-055-540.jpg?v=1632403896"
+        }
+      ],
+      "totalValue": 154.97,
+      "cep": null,
+      "created_at": "Mon Feb 26 2024 15:57:37 GMT-0300 (Horário Padrão de Brasília)"
+    },
+    {
+      "id": "cbe6",
+      "items_order": [
+        {
+          "id": "4950",
+          "idProduct": "6",
+          "title": "vestido floral",
+          "category": "roupas",
+          "quantity": 1,
+          "price": 34.99,
+          "totalValue": 34.99,
+          "imageURL": "https://www.lojastyleme.com.br/cdn/shop/products/VESTIDOpretofloralcostasnuascomcinturaderenda_650x.jpg?v=1640009014"
+        },
+        {
+          "id": "b9ca",
+          "idProduct": "3",
+          "title": "tênis esportivo",
+          "category": "calçados",
+          "quantity": 2,
+          "price": 59.99,
+          "totalValue": 119.98,
+          "imageURL": "https://energyexpress.com.br/cdn/shop/products/tenis-esportivo-casual-masculino-feminino-simple-way-moda-055-540.jpg?v=1632403896"
+        }
+      ],
+      "totalValue": 154.97,
+      "cep": {
+        "cep": "25963-430",
+        "logradouro": "Caminho da Torre da Rádio de Teresópolis",
+        "complemento": "",
+        "bairro": "Trombetas",
+        "localidade": "Teresópolis",
+        "uf": "RJ",
+        "ibge": "3305802",
+        "gia": "",
+        "ddd": "21",
+        "siafi": "5915"
+      },
+      "created_at": "Mon Feb 26 2024 15:58:47 GMT-0300 (Horário Padrão de Brasília)"
+    },
+    {
+      "id": "be8a",
+      "items_order": [
+        {
+          "id": "4950",
+          "idProduct": "6",
+          "title": "vestido floral",
+          "category": "roupas",
+          "quantity": 1,
+          "price": 34.99,
+          "totalValue": 34.99,
+          "imageURL": "https://www.lojastyleme.com.br/cdn/shop/products/VESTIDOpretofloralcostasnuascomcinturaderenda_650x.jpg?v=1640009014"
+        },
+        {
+          "id": "b9ca",
+          "idProduct": "3",
+          "title": "tênis esportivo",
+          "category": "calçados",
+          "quantity": 2,
+          "price": 59.99,
+          "totalValue": 119.98,
+          "imageURL": "https://energyexpress.com.br/cdn/shop/products/tenis-esportivo-casual-masculino-feminino-simple-way-moda-055-540.jpg?v=1632403896"
+        }
+      ],
+      "totalValue": 154.97,
+      "cep": null,
+      "created_at": "Mon Feb 26 2024 15:59:26 GMT-0300 (Horário Padrão de Brasília)"
+    },
+    {
+      "id": "127b",
+      "items_order": [
+        {
+          "id": "33e3",
+          "idProduct": "3",
+          "title": "tênis esportivo",
+          "category": "calçados",
+          "quantity": 1,
+          "price": 59.99,
+          "totalValue": 59.99,
+          "imageURL": "https://energyexpress.com.br/cdn/shop/products/tenis-esportivo-casual-masculino-feminino-simple-way-moda-055-540.jpg?v=1632403896"
+        }
+      ],
+      "totalValue": 59.99,
+      "cep": {
+        "cep": "25956-035",
+        "logradouro": "Rua Otávio Strucchi",
+        "complemento": "",
+        "bairro": "São Pedro",
+        "localidade": "Teresópolis",
+        "uf": "RJ",
+        "ibge": "3305802",
+        "gia": "",
+        "ddd": "21",
+        "siafi": "5915"
+      },
+      "created_at": "Mon Feb 26 2024 16:00:31 GMT-0300 (Horário Padrão de Brasília)"
+    },
+    {
+      "id": "617c",
+      "items_order": [
+        {
+          "id": "e08c",
+          "idProduct": "5",
+          "title": "relógio analógico",
+          "category": "acessórios",
+          "quantity": 1,
+          "price": 149.99,
+          "totalValue": 149.99,
+          "imageURL": "https://m.media-amazon.com/images/I/51RmuNXPpuL._AC_SX569_.jpg"
+        },
+        {
+          "id": "af5d",
+          "idProduct": "9",
+          "title": "bolsa tote",
+          "category": "acessórios",
+          "quantity": 2,
+          "price": 39.99,
+          "totalValue": 79.98,
+          "imageURL": "https://secure-static.arezzo.com.br/medias/sys_master/arezzo/arezzo/h0b/h38/h00/h00/10659688316958/HEADLESS-5002106310001U-HO-BASEIMAGE-Midres-Headless.jpg"
+        }
+      ],
+      "totalValue": 229.97000000000003,
+      "cep": {
+        "cep": "25956-035",
+        "logradouro": "Rua Otávio Strucchi",
+        "complemento": "",
+        "bairro": "São Pedro",
+        "localidade": "Teresópolis",
+        "uf": "RJ",
+        "ibge": "3305802",
+        "gia": "",
+        "ddd": "21",
+        "siafi": "5915"
+      },
+      "created_at": "Mon Feb 26 2024 16:02:28 GMT-0300 (Horário Padrão de Brasília)"
+    }
+  ],
   "products": [
     {
       "id": "1",

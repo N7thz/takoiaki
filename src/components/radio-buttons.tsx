@@ -12,10 +12,7 @@ export function RadioButtons() {
             <div
                 className="flex items-center space-x-2"
             >
-                <RadioGroupItem
-                    value="débito"
-                    id="r1"
-                />
+                <RadioGroupItem value="débito" id="r1" />
                 <Label htmlFor="r1">
                     débito
                 </Label>
@@ -24,22 +21,16 @@ export function RadioButtons() {
             <div
                 className="flex items-center space-x-2"
             >
-                <RadioGroupItem
-                    value="crédito"
-                    id="r2"
-                />
+                <RadioGroupItem value="crédito" id="r2" />
                 <Label htmlFor="r2">
                     crédito
                 </Label>
             </div>
-            
+
             <div
                 className="flex items-center space-x-2"
             >
-                <RadioGroupItem
-                    value="pix"
-                    id="r3"
-                />
+                <RadioGroupItem value="pix" id="r3" />
                 <Label htmlFor="r3">
                     pix
                 </Label>

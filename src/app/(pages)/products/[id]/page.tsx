@@ -36,10 +36,7 @@ export default function Product({ params }: { params: { id: string } }) {
         }
     })
 
-    if (!productResponse) {
-
-        return
-    }
+    if (!productResponse) return
 
     const { title, description, category, qtStock, price, imageURL } = productResponse
 

@@ -25,10 +25,7 @@ export const ShoppingCart = () => {
         }
     })
 
-    if (!shoppingCart) {
-
-        return
-    }
+    if (!shoppingCart) return
 
     shoppingCart?.map(item => {
 
@@ -97,11 +94,16 @@ export const ShoppingCart = () => {
                     }
                 </CardContent >
             </ScrollArea>
-            <span
-                className="p-2 mb-4 text-ms"
-            >
-                Valor Total: R$ {totalValue}
-            </span>
+
+            {
+                shoppingCart.length > 0 &&
+                <span
+                    className="p-2 mb-4 text-ms"
+                >
+                    Valor Total: R$ {totalValue.toFixed(2)}
+                </span>
+            }
+
             {
                 isRemoved &&
                 <AlertModal

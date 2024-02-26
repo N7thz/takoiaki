@@ -27,6 +27,14 @@ export interface Product {
     isLiked: boolean
 }
 
+export interface History {
+    id: string
+    items_order: CartItem[]
+    totalValue: number
+    cep: Cep
+    created_at: string
+}
+
 export interface CartItem {
 
     id?: string
@@ -74,4 +82,11 @@ export interface Cep {
     gia: string
     ddd: string
     siafi: string
+}
+
+export interface ButtonFinishOrderProps {
+
+    cep: Cep | null
+    isCreated: boolean
+    setIsCreated: Dispatch<SetStateAction<boolean>>
 }

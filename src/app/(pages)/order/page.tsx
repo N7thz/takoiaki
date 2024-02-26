@@ -1,30 +1,27 @@
 "use client"
 
-import { RadioButtons } from "@/components/radio-buttons"
-import { ShoppingCart } from "@/components/shopping-cart"
-import { Button } from "@/components/ui/button"
+import { useState } from "react"
 import { Card, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Check } from "lucide-react"
+import { RadioButtons } from "@/components/radio-buttons"
+import { ShoppingCart } from "@/components/shopping-cart"
 import { useSession } from "next-auth/react"
-import { useState } from "react"
 import { Cep } from "@/types"
+import { Check } from "lucide-react"
+import { ButtonFinishOrder } from "@/components/button-finish-order"
+import { AlertModal } from "@/components/alert-modal"
 
 export default function Order() {
 
     const [cepText, setCepText] = useState<string>("")
     const [cep, setCep] = useState<Cep | null>(null)
+    const [isCreated, setIsCreated] = useState<boolean>(false)
 
-    const { data: session } = useSession({
+    useSession({
 
         required: true
     })
-
-    if (!session || !session.user?.email) {
-
-        return 
-    }
 
     async function getCep() {
 
@@ -36,24 +33,11 @@ export default function Order() {
         setCep(data)
     }
 
-    async function sendEmail() {
-
-        const response = await fetch("/api/send", {
-            method: "POST",
-            body: JSON.stringify(session?.user?.email)
-        })
-
-        const data =  await response.json()
-
-        console.log(data) 
-    }
-
     return (
 
         <div
             className="min-h-screen bg-zinc-100 dark:bg-zinc-900 flex justify-center items-center"
         >
-
             <ScrollArea
                 className="w-2/3 h-[660px] bg-gradient-to-b from-indigo-400 to-cyan-300 rounded-lg drop-shadow-2xl flex p-1"
             >
@@ -140,15 +124,24 @@ export default function Order() {
                         <div
                             className="w-full flex justify-end"
                         >
-                            <Button
-                                onClick={sendEmail}
-                            >
-                                Finalizar Pedido
-                            </Button>
+                            <ButtonFinishOrder
+                                cep={cep}
+                                isCreated={isCreated}
+                                setIsCreated={setIsCreated}
+                            />
                         </div>
                     </CardFooter>
                 </Card>
             </ScrollArea>
+            {
+                isCreated &&
+                <AlertModal
+                    title="Sucesso"
+                    message="O pedido foi finalizado com sucesso"
+                    variant={"default"}
+                    className="w-1/3 border border-indigo-400 absolute top-16 z-50 animate-jump-in"
+                />
+            }
         </div>
     )
 }

@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
-import { CartItem, FormItemProps, Product } from "@/types"
+import { CartItem, FormItemProps } from "@/types"
 import { Plus, Minus } from "lucide-react"
 
 export const FormItem: FC<FormItemProps> = ({ product, setIsCreated }) => {
@@ -38,7 +38,7 @@ export const FormItem: FC<FormItemProps> = ({ product, setIsCreated }) => {
 
         e.preventDefault()
 
-        const totalValue: number = Number((price * quantity).toFixed(2))
+        const totalValue = Number((price * quantity).toFixed(2))
 
         const cartItem: CartItem = {
 
